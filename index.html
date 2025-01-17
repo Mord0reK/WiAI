@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przeglądarka katalogów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .folder {
+            color: #2c5282;
+            font-weight: bold;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .file {
+            color: #444;
+            margin: 5px 0;
+            margin-left: 20px;
+        }
+        .folder::before {
+            content: "📁";
+            margin-right: 5px;
+        }
+        .file::before {
+            content: "📄";
+            margin-right: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Przeglądarka katalogów</h1>
+    <div id="fileTree"></div>
+
+    <script>
+        async function loadFileStructure() {
+            try {
+                const response = await fetch('scan.php');
+                const structure = await response.json();
+                const fileTree = document.getElementById('fileTree');
+                fileTree.innerHTML = '';
+                createFileTree(structure, fileTree);
+            } catch (error) {
+                console.error('Błąd ładowania struktury:', error);
+            }
+        }
+
+        function createFileTree(structure, container) {
+            for (const [name, content] of Object.entries(structure)) {
+                if (content === null) {
+                    const fileDiv = document.createElement('div');
+                    fileDiv.className = 'file';
+                    const link = document.createElement('a');
+                    link.href = name;
+                    link.textContent = name;
+                    fileDiv.appendChild(link);
+                    container.appendChild(fileDiv);
+                } else {
+                    const folderDiv = document.createElement('div');
+                    folderDiv.className = 'folder';
+                    folderDiv.textContent = name;
+                    
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'folder-content hidden';
+                    createFileTree(content, contentDiv);
+                    
+                    folderDiv.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        contentDiv.classList.toggle('hidden');
+                    });
+
+                    container.appendChild(folderDiv);
+                    container.appendChild(contentDiv);
+                }
+            }
+        }
+
+        // Inicjalne załadowanie struktury
+        loadFileStructure();
+    </script>
+</body>
+</html>
