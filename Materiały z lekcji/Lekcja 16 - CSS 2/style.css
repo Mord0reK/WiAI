@@ -1,0 +1,40 @@
+#nagłowek {
+    background-color: #EFE4B0;
+    text-align: center;
+}
+
+#k2 {
+    color: black;
+    font-size: 70px;
+    text-align: center;
+}
+
+#goragor {
+    font-size: 70px;
+    color: #00ff00;
+}
+
+#linia {
+    height: 10px;
+    margin: 0;
+    background-color: black;
+    border: 0;
+}
+
+#tlo {
+    background-color: #00A2E8;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+#tresc {
+    background-color: #A349A4;
+    border: 5px solid black;
+    width: 50%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: yellow;
+}

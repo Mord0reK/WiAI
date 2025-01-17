@@ -1,0 +1,26 @@
+table {
+	width:100%;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 20px;
+	text-align: left;
+}
+tr:nth-child(even) {
+	background-color: #abc;
+}
+tr:nth-child(odd) {
+	background-color: #def;
+}
+th {
+	background-color: #888;
+	color: white;
+}
+
+#caption {
+    font-size: xx-large;
+    font-family: cursive;
+}

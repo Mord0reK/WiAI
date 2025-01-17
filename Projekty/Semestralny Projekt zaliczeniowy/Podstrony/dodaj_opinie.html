@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opiniomat</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../Multimedia/icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Strona główna</a>
+        <a href="../Podstrony/kontakt.html">Kontakt</a>
+        <a href="../Podstrony/o_stronie.html">O Stronie</a>
+        <a href="../Podstrony/regulamin.html">Regulamin</a>
+      </nav>
+      <h2>Dodaj Opinię</h2>
+      <br><br><br>
+    </header>
+    <div id="formularz">
+      <form action="../index.html" method="get">
+        <label for="imie">Imię:</label><br><br>
+        <input type="imie" id="imie" name="imie" required><br>
+        <label for="produkt">Wybierz produkt</label><br><br>
+        <select id="produkty" name="Produkt" required>
+          <option value="">Wybierz produkt</option>
+          <option value="1">Mysz bezprzewodowa Logitech MX Master 3S</option>
+          <option value="2">Drukarka atramentowa kolorowa Epson EcoTank L1250</option>
+          <option value="3">Mikrofon Blue Microphones Yeti Blackout</option>
+        </select>
+        <br><br>
+        <label for="ocena">Ocena:</label>
+        <select id="ocena" name="Ocena" required>
+          <option value="">Wybierz ocenę</option>
+          <option value="1">&#11088;</option>
+          <option value="2">&#11088;&#11088;</option>
+          <option value="3">&#11088;&#11088;&#11088;</option>
+          <option value="4">&#11088;&#11088;&#11088;&#11088;</option>
+          <option value="5">&#11088;&#11088;&#11088;&#11088;&#11088;</option>
+        </select>
+        <br><br>
+        <label for="opinia">Opinia:</label><br><br>
+        <textarea type="opinia" name="opinia"></textarea><br>
+        <input type="submit" value="Dodaj opinię">
+      </form>
+    </div>
+    <br><br><br>
+    <footer>
+      <p>© 2024 Firma Krzak</p>
+    </footer>
+  </body>
+</html>

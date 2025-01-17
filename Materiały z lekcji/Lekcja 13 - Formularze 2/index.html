@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze 2</title>
+</head>
+<body>
+    <form action="wyslane.html">
+        <h3>Dane osobowe: </h3>
+        <p>Podaj swoje nazwisko i imię:</p>
+        <input type="text" name="imienazwisko" value="Zadrożny Marcin">
+        <br><br>
+        <fieldset style="width: 200px;">
+            <legend>Wykształcenie</legend>
+            <input type="radio" name="grupa_opcji"> Podstawowe <br>
+            <input type="radio" name="grupa_opcji" checked> Średnie <br>
+            <input type="radio" name="grupa_opcji"> Wyższe
+        </fieldset>
+        <br>
+        Pracuję: <input type="checkbox">
+        <br>
+        <br>
+        <input type="submit" name="wyslij"> &nbsp;
+        <input type="reset" name="wyczysc">
+    </form>
+</body>
+</html>

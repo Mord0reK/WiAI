@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+img {
+    display: flex;
+    float: left;
+    clear: both;
+    margin-bottom: 30px
+}
+figure {
+    margin: 0;
+}
+
+p {
+    margin-left: 300px;
+    margin-right: 350px;
+    margin-top: 30px;
+    padding: 70px;
+    font-size: large;
+}

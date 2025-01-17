@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiały blokowe i liniowe</title>
+</head>
+<body>
+    <div>
+        <h1>Nagłówek pierwszego poziomu</h1>
+        <h2>Nagłówek drugiego poziomu</h2>
+        <h3>Nagłówek trzeciego poziomu</h3>
+        <h4>Nagłówek czwartego poziomu</h4>
+        <h5>Nagłówek piątego poziomu</h5>
+        <h6>Nagłówek szóstego poziomu</h6>
+    </div>
+    <div>
+        <p>
+            To jest pierwszy wiersz <br>
+            To jest drugi wiersz po użyciu znacznika br <br>
+            To jest trzeci wiersz
+        </p>
+    </div>
+    <div>
+        <p>Pierwszy akapit tekstu</p>
+        <hr>
+        <p>Drugi akapit tekstu pod linią</p>
+    </div>
+    <div>
+        <p>To jest blok programu w C++ szyfrujacy tekst za pomocą Szyfru Cezara <br> przedstawiony na stronie za pomoca znacznika pre</p>
+        <pre>
+        #include <iostream>
+        #include <string>
+            
+        using namespace std;
+            
+        int main()
+        {
+            string jawny, zaszyfrowany="";
+            int i, klucz;
+            int kod;
+            cout << "Tekst jawny: "; cin >> jawny;
+            cout << "Klucz: "; cin >> klucz;
+            for (i=0; i<jawny.size(); i++)
+            {
+                if (toupper(jawny[i]) >= 'A' && toupper(jawny[i]))
+                {
+                    kod = jawny[i] + klucz;
+                    if ((jawny[i] <= 'Z') && kod > 'Z' || jawny[i] >= 'a' && kod > 'z')
+                    {
+                        kod = kod - 26;
+                    }
+                    zaszyfrowany = zaszyfrowany + char(kod);
+                }
+                else zaszyfrowany = zaszyfrowany + jawny[i];
+            }
+            cout << "Zaszyfrowany: " << zaszyfrowany << endl;
+            return 0;
+        }
+        </pre>
+    </div>
+</body>
+</html>

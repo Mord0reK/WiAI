@@ -1,0 +1,32 @@
+h1 {
+    font-family: Arial;
+    color: blue;
+}
+
+#naglowek {
+    color: green;
+    text-decoration: none;
+}
+
+#naglowek:hover {
+    color: red;
+}
+
+section {
+    margin: 20px;
+}
+
+#services {
+    background-color: lightgray;
+}
+
+#contact {
+    color: white;
+    background-color: darkblue;
+}
+
+#stopka {
+    color: white;
+    background-color: black;
+    text-align: center;
+}

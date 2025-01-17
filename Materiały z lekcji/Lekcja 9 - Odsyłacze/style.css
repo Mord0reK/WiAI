@@ -1,0 +1,43 @@
+table {
+	width: 30%;
+    height: 100%;
+}
+table, th, td {
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+body {
+    margin: 0;
+    padding: 10px;
+}
+img {
+    display: flex;
+    float: left;
+    clear: both;
+    margin-bottom: 30px
+}
+figure {
+    margin: 0;
+}
+
+h1 {
+    margin-left: 150px;
+}
+
+figcaption
+{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+p {
+    margin-left: 300px;
+    margin-right: 350px;
+    margin-top: 30px;
+    padding: 70px;
+    font-size: large;
+}

@@ -1,0 +1,232 @@
+/* Globalne style + nagłówek */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F5E6D3;
+}
+
+header {
+    background-image: linear-gradient(#c1e1ff, rgba(255, 255, 255, 0));
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    color: #2D1810;
+    text-align: center;
+}
+
+/* Nawigacja */
+
+nav {
+    position: absolute;
+    left: 10px;
+}
+
+nav > a {   
+    text-decoration: none;
+    color: #F5E6D3;
+    background-color: #A67B5B;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    transition: background 0.5s;
+}
+
+nav a:hover {
+    background: #86B49C;
+}
+
+
+/* Produkty */
+
+#produkty {
+    padding: 10px;
+}
+
+#produkt {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #DEC3A5;
+    box-shadow: 0 4px 8px rgba(45, 24, 16, 0.2);
+    margin-bottom: 1%;
+}
+
+#produkt img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#produkt h1 {
+    color: #2D1810;
+    margin: 0;
+}
+
+
+/* Opinie */
+
+#lista_opinii {
+    display: flex;
+    flex-direction: column;
+}
+
+#opinie {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Odstępy między sekcjami */
+    max-width: 60%;
+}
+
+#opinie-header {
+    display: flex;
+}
+
+#lista_opinii ul {
+    margin: 0;
+    padding: 0;
+}
+
+#opinie-header > a {
+    text-decoration: none;
+    color: #F5E6D3;
+    background-color: #A67B5B;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    transition: background 0.5s;
+}
+
+
+/* Formularz wystawiania opini oraz kontaktu */
+
+#formularz {
+    justify-self: center;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #DEC3A5;
+    box-shadow: 0 4px 8px rgba(45, 24, 16, 0.2);
+}
+
+label {
+    color: #F5E6D3;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+input[type="imie"] {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="powod"] {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea[type="opinia"] {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    width: 700px; 
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea[type="tekst"] {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    min-width: 95%;
+    max-width: 100%; 
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+option, select {
+    color: white;
+    background-color: #4CAF50;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
+/* Regulamin */
+
+#regulamin {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #DEC3A5;
+    border: 1px solid #A67B5B;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(45, 24, 16, 0.2);
+}
+
+
+/* Tabela w o_stronie.html */
+#tabela {
+    display: flex;
+    justify-content: center;
+}
+
+tr, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 10px;
+}
+tr {
+    background-color: #f4f4f4;
+}
+
+
+/* Stopka */
+
+footer {
+    background-image: linear-gradient(rgba(170, 170, 170, 0), #c1e1ff);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

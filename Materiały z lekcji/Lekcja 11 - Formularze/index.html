@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+</head>
+<body>
+    <h1>Przykład 2.38</h1>
+    <form action="mailto:nauka@gmail.com" method="post">
+        <h3>Treśc formularza z przykładu 2.38</h3>
+    </form>
+    <h1>Przykład 2.39</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <p>Podaj swój adres e-mail: </p>
+        <input type="text" name="adres" value="">
+        <input type="submit" value="Wyślij!">
+    </form>
+    <h1>Przykład 2.40</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Formularz kontaktowy</h4>
+        <p>Podaj swoje nazwisko i imię: <input type="text" name="nazwisko" value="" size="30"></p>
+    </form>
+    <h1>Przykład 2.41</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Formularz kontaktowy</h4>
+        <p>Podaj swoje nazwisko i imię: <input type="text" name="nazwisko" value="" size="30"></p>
+        <p><input type="checkbox" name="opcja"> Zgadzam się na przetwarzanie moich danych osobowych</p>
+    </form>
+    <h1>Przykład 2.42</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Wykształcenie: </h3>
+        <input type="radio" name="grupa_opcji" value="podstawowe"> Podstawowe <br>
+        <input type="radio" name="grupa_opcji" value="srednie"> Średnie <br>
+        <input type="radio" name="grupa_opcji" value="wyższe"> Wyższe <br>
+    </form>
+    <h1>Przykład 2.43</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Podaj hasło: <input type="password" name="haslo" value="" size="10", maxlength="32"></h3>
+    </form>
+    <h1>Przykład 2.44</h1>
+    <form enctype="multipart/form-data" action="http://localhost/skrypt_form.php" method="post">
+        <p>Wyślij ten plik <br><br> <input type="file" name="plik" size="50"></p>
+    </form>
+    <h1>Przykład 2.45</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Formularz kontaktowy</h4>
+        <p>Podaj swoje nazwisko i imię: <input type="text" name="nazwisko" value="" size="30"></p>
+        <h3>Wykształcenie: </h3>
+        <input type="radio" name="grupa_opcji" value="podstawowe"> Podstawowe <br>
+        <input type="radio" name="grupa_opcji" value="srednie"> Średnie <br>
+        <input type="radio" name="grupa_opcji" value="wyższe"> Wyższe <br>
+        <p><input type="checkbox" name="opcja"> Zgadzam się na przetwarzanie moich danych osobowych</p>
+        <p><input type="submit" value="Wyślij!"><input type="reset" value="Wyczyść"></p>
+    </form>
+    <h1>Przykład 2.46</h1>
+    <input type="hidden" name="Data urodzenia" value="3 marca 1980">
+    <h1>Przykład 2.47</h1>
+    <input type="button" value="Przycisk">
+    <h1>Przykład 2.48</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Wybierz kolor z podanej palety: </h4>
+        <input type="color" name="kolor" value="#ff0000">
+        <input type="button" value="Wyślij">
+    </form>
+    <h1>Przykład 2.49</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Wpisz adres e-mail: </h4>
+        <input type="email" value="email">
+        <input type="button" value="Wyślij">
+    </form>
+    <h1>Przykład 2.50</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Wprowadź liczbę z zakresu od 10 do 100:</h4>
+        <input type="number" value="20" name="liczba" min="10" max="100">
+        <input type="button" value="Wyślij">
+    </form>
+    <h1>Przykład 2.51</h1>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h4>Podaj datę urodzin:</h4>
+        <input type="date" name="data">
+        <input type="button" value="Wyślij">
+    </form>
+</body>
+</html>

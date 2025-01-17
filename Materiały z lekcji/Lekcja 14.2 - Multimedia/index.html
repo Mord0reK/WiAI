@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Multimedia</title>
+</head>
+<body>
+	<div>
+		<h1>Przykład 2.67</h1>
+		<a href="audio.mp3">Moja Muzyka</a>
+		<a href="film.mp4"><img src="obrazek.jpg" alt="wyswietla film" width="60" height="100"></a>
+	</div>
+	<div>
+		<h1>Przykład 2.68</h1>
+		<a href="audio.wma">Moja Muzyka</a><br><br><br>
+		<a href="film.mp4"><img src="obrazek.jpg" alt="wyswietla film" width="60" height="100"></a>
+	</div>
+	<div>
+		<h1>Przykład 2.69</h1>
+		<video height="400" width="500" controls src="audio.ogg">Ten typ video nie jest obsługiwany!</video>
+	</div>
+	<div>
+		<h1>Przykład 2.70</h1>
+		<video height="400" width="500" controls>
+			<source src="audio.ogg" type="video/ogg">
+			<source src="film.mp4" type="video/mp4">
+			Ten typ video nie jest obsługiwany!
+		</video>
+	</div>
+	<div>
+		<h1>Przykład 2.71</h1>
+		<audio controls>
+			<source src="audio.ogg" type="audio/ogg">
+			<source src="testowe-audio.wav" type="audio/wav">
+			Ten typ audio nie jest obsługiwany!
+		</audio>
+	</div>
+	<div>
+		<h1>Przykład 2.72</h1>
+		<canvas id="kanwa" width="200" height="120" style="border: 1px solid #aec5ce;">Brak obsługi canvas</canvas>
+		<script>
+			var kanwa = document.getElementById("kanwa");
+			var kontekst = kanwa.getContext("2d");
+			kontekst.moveTo(0, 0);
+			kontekst.lineTo(200, 120);
+            kontekst.strokeStyle = "blue";
+			kontekst.stroke();
+		</script>
+	</div>
+	<div>
+		<h1>Przykład 2.73</h1>
+		<h3>Rysuje zielony kwadrat</h3>
+		<canvas id="dwakwadraty" width="200" height="150" style="border: 1px solid #aec5ce;">Brak obsługi canvas</canvas>
+		<script>
+			var kanwa = document.getElementById("dwakwadraty");
+			var kontekst = kanwa.getContext("2d");
+			kontekst.fillStyle = "green";
+			kontekst.fillRect(50, 50, 50, 50);
+            kontekst.strokeStyle = "black";
+			kontekst.strokeRect(40, 40, 70, 70);
+		</script>
+	</div>
+	<div>
+		<h1>Przykład 2.74</h1>
+		<h3>Dźwięk i film</h3>
+		<embed src="audio.mp3" width="170" height="70">
+		<embed src="audio.mp3" width="350" height="250">
+	</div>
+	<div>
+		<h1>Przykład bez numeru</h1>
+		<object data="obrazek.jpg"></object>
+		<object width="100" height="100" data="ruch.swf"></object>
+		<object width="200" height="300" data="strona.html"></object>
+	</div>
+	<div>
+		<h1>Skrypty</h1>
+		<script type="text/javascript">
+			document.write("Witaj na stronie");
+		</script>
+		<script type="text/vbscript">
+			MsgBox "Witaj"
+		</script>
+	</div>
+</body>
+</html>

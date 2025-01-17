@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+header {
+    background-image: linear-gradient(#000000, rgba(170, 170, 170, 0));
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+#rodzaj > h1{
+    text-align: center;
+}
+
+
+nav {
+    position: absolute;
+    left: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    background-color: #066eac;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-align: left;
+    margin-left: 5px;
+    transition: background 0.5s;
+}
+
+nav a:hover {
+    background: #00b8ff;
+}
+
+section {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#typy_tytul {
+    text-align: center;
+    color: white;
+}
+
+#rodzaj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #4e71a5;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 580px;
+    border-radius: 10px;
+}
+
+#rodzaj img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#rodzaj article {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #ddeeff;
+}
+
+#rodzaj h1 {
+    color: white;
+    text-align: center;
+}
+
+#sprawnosc {
+    margin-top: 10%;
+    padding-bottom: 50px;
+}
+
+#pobor {
+    margin-top: 6%;
+    padding-bottom: 50px;
+}
+
+/* Stopka */
+footer {
+    background-image: linear-gradient(rgba(170, 170, 170, 0), #000000);
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+}
+
+
+#opis {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #4e71a5;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 30px;
+}
+
+
+#opis h1 {
+    color: white;
+    font-family: Open Sans, sans-serif;
+    font-size: xx-large;
+    margin: 0;
+}
+
+#opis h2 {
+    color: white;
+    font-family: Open Sans, sans-serif;
+    font-size: x-large;
+    margin: 0;
+}
+
+#opis p {
+    color: #ddeeff;
+    font-family: Open Sans, sans-serif;
+    font-size: large;
+    margin: 0;
+}
+
+#opis ul li {
+    color: #ddeeff;
+    font-family: Open Sans, sans-serif;
+    font-size: large;
+}

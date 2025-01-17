@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze 3</title>
+</head>
+<body>
+    <div>
+        <h1>Formularz rejestracyjny:</h1>
+        <form action="http://localhost/skrypt_form.php" method="post">
+            Podaj swoje nazwisko: <input name="nazwisko"><br>
+            Podaj swoje imię: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="imie"><br><br>
+            Wybierz płeć:
+            <br>
+            <input type="radio" name="plec"> Kobieta
+            <input type="radio" name="plec"> Mężczyzna
+            <br><br>
+            Podaj wiek: <br>
+            <input type="text">
+            <br><br>
+            Podaj adres e-mail: <br>
+            <input type="text">
+            <br><br><br>
+            Wybierz wykształcenie:
+            <br>
+            <input type="radio"> Podstawowe <br>
+            <input type="radio"> Średnie <br>
+            <input type="radio"> Wyższe
+            <br><br>
+            Wybierz języki: <br>
+            <select name="jezyki" size="10" multiple>
+                <option value="angielski">Język Angielski</option>
+                <option value="niemiecki">Język Niemiecki</option>
+                <option value="francuski">Język Francuski</option>
+                <option value="wloski">Język Włoski</option>
+                <option value="rosyjski">Język Rosyjski</option>
+                <option value="hiszpanski">Język Hiszpański</option>
+            </select>
+            <br><br>
+            Wybierz zainteresowania: <br>
+            <input type="checkbox"> Motoryzacja <br>
+            <input type="checkbox"> Sport <br>
+            <input type="checkbox"> Muzyka <br>
+            <input type="checkbox"> Taniec <br>
+            <input type="checkbox"> Gry komputerowe <br>
+            <input type="checkbox"> Inne (Podaj jakie): <input type="text"> <br><br>
+            Wpisz swoje uwagi:<br>
+            <textarea name="blok" rows="8" cols="40"></textarea><br><br>
+            <input type="checkbox"> Zgadzam się na przetwarzanie moich danych osobowych.<br><br>
+            <input type="submit" value="Wyślij"><input type="reset" value="Wyczyść">
+        </form>
+    </div>
+</body>
+</html>
