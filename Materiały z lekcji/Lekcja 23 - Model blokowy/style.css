@@ -1,0 +1,23 @@
+#bez_marginesu {
+    border: 5px black solid;
+}
+
+#margines_zewnetrzny {
+    border: 5px black solid;
+    margin: 1cm;
+}
+
+#margines_wewnetrzny {
+    border: 5px black solid;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+}
+
+#margines_rozny {
+    border: 5px black solid;
+    margin-left: 2cm;
+    margin-right: 5cm;
+    padding-bottom: 3cm;
+}
