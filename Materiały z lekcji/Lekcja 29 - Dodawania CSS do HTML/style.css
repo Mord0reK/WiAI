@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    box-shadow: 5px 5px 10px black;
+    width: 30%;
+    border-radius: 10px;
+}
+
+form {
+    margin: 100px;
+}
+
+input[type=text],
+input[type=number]{
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+input[type=submit] {
+    border-radius: 10px;
+}
+
+h1 {
+    text-decoration: underline;
+    font-weight: bold;
+    display: flex;
+    justify-self: center;
+    color: blue;
+}

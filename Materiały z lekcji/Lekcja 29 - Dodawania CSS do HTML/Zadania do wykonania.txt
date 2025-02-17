@@ -1,0 +1,27 @@
+#1. Strona powinna wyświetlać się w trzech blokach - Blok nagłówek, blok treści oraz wewnątrz bloku treści blok formularza.
+
+#2. Ustaw elegancką czcionkę – Zmień domyślną czcionkę na bardziej czytelną, np. Roboto, Arial lub Georgia.
+
+#3. Ogranicz szerokość formularza i wyśrodkuj go – Formularz powinien być responsywny i nie zajmować całej szerokości ekranu.
+
+#4. Dodaj cień do formularza – Subtelny cień sprawi, że formularz będzie wyglądał bardziej elegancko.
+
+#5. Zaokrąglij rogi formularza i przycisków – Dodanie lekkiego zaokrąglenia sprawi, że elementy będą wyglądały bardziej przyjaźnie.
+
+#6. Dodaj odstępy między elementami formularza – Każde pole i etykieta powinny mieć odpowiednie marginesy, aby ułatwić czytanie.
+
+#7. Podkreśl nagłówek strony – Zmień jego kolor, wielkość i dodaj efekt wyróżnienia, np. poprzez pogrubienie.
+
+8. Ulepsz wygląd pól formularza – Powinny mieć wyraźne obramowanie, jednolity styl i wygodne wprowadzanie danych.
+
+9. Zmień wygląd przycisku „Dodaj książkę” – Powinien mieć kontrastowy kolor, efekt po najechaniu i wyraźny tekst.
+
+10. Dodaj efekt podświetlenia na polach formularza – Kiedy użytkownik klika na pole, powinno się lekko wyróżnić.
+
+11. Zmień wygląd etykiet formularza – Powinny być czytelne, odpowiednio rozmieszczone i pasować do ogólnego stylu strony.
+
+12. Dodaj efekt zmiany koloru tła formularza po najechaniu – Może to być delikatne rozjaśnienie lub zmiana odcienia.
+
+13. Zmień kolor tła strony – Wybierz delikatny, neutralny kolor tła, aby strona wyglądała nowocześnie.
+
+
