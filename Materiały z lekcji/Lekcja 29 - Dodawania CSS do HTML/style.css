@@ -1,14 +1,22 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212; /* zmieniono na ciemny motyw */
+    color: #e0e0e0;
 }
 
 section {
     display: flex;
     justify-content: center;
     justify-self: center;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px #000;
     width: 30%;
     border-radius: 10px;
+    border: 1px solid #444;
+}
+
+section:hover {
+    transition: 0.5s;
+    background-color: #1f1f1f;
 }
 
 form {
@@ -17,13 +25,24 @@ form {
 
 input[type=text],
 input[type=number]{
-    margin: 5px;
-    border-radius: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    color: black;
 }
 
+input[type=text]:focus,
+input[type=number]:focus {
+    transition: 300ms;
+    background-color: #333;
+    color: white;
+}
 
 input[type=submit] {
     border-radius: 10px;
+    padding: 8px;
+    background-color: #333;
+    color: #e0e0e0;
 }
 
 h1 {
@@ -31,5 +50,12 @@ h1 {
     font-weight: bold;
     display: flex;
     justify-self: center;
-    color: blue;
+    color: #4da6ff;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ccc;
 }

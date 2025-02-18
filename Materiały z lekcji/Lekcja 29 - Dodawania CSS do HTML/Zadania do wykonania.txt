@@ -12,16 +12,14 @@
 
 #7. Podkreśl nagłówek strony – Zmień jego kolor, wielkość i dodaj efekt wyróżnienia, np. poprzez pogrubienie.
 
-8. Ulepsz wygląd pól formularza – Powinny mieć wyraźne obramowanie, jednolity styl i wygodne wprowadzanie danych.
+#8. Ulepsz wygląd pól formularza – Powinny mieć wyraźne obramowanie, jednolity styl i wygodne wprowadzanie danych.
 
-9. Zmień wygląd przycisku „Dodaj książkę” – Powinien mieć kontrastowy kolor, efekt po najechaniu i wyraźny tekst.
+#9. Zmień wygląd przycisku „Dodaj książkę” – Powinien mieć kontrastowy kolor, efekt po najechaniu i wyraźny tekst.
 
-10. Dodaj efekt podświetlenia na polach formularza – Kiedy użytkownik klika na pole, powinno się lekko wyróżnić.
+#10. Dodaj efekt podświetlenia na polach formularza – Kiedy użytkownik klika na pole, powinno się lekko wyróżnić.
 
-11. Zmień wygląd etykiet formularza – Powinny być czytelne, odpowiednio rozmieszczone i pasować do ogólnego stylu strony.
+#11. Zmień wygląd etykiet formularza – Powinny być czytelne, odpowiednio rozmieszczone i pasować do ogólnego stylu strony.
 
-12. Dodaj efekt zmiany koloru tła formularza po najechaniu – Może to być delikatne rozjaśnienie lub zmiana odcienia.
+#12. Dodaj efekt zmiany koloru tła formularza po najechaniu – Może to być delikatne rozjaśnienie lub zmiana odcienia.
 
-13. Zmień kolor tła strony – Wybierz delikatny, neutralny kolor tła, aby strona wyglądała nowocześnie.
-
-
+#13. Zmień kolor tła strony – Wybierz delikatny, neutralny kolor tła, aby strona wyglądała nowocześnie.
