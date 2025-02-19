@@ -1,0 +1,17 @@
+1. Aby przystąpić do definiowania menu należy
+
+O: Utworzyć listę <ul> oraz w niej hiperlinki do stron 
+
+
+2. Menu pionowe tworzymy za pomocą znacznika ... a menu poziome za pomoca znacznika
+
+O: pionowe za pomocą ul oraz li z odpowiednim stylowaniem, a poziomie za pomocą samego ul i li
+
+3. Opisz tą linijkę kodu 
+	ul a:link, ul a.visited {}
+
+O: Ta linijka kodu oznacza stylowanie listy, a:link oznacza stylowanie hiperlinku, a a.visited oznacza stylowanie hiperlinku po tym gdy odwiedziliśmy tą stronę
+
+4. Który atrybut odpowiada za wyświetlanie elementów menu w blokach 
+
+O: display: block; i position: relative;
