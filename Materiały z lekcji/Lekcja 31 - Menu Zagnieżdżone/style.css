@@ -1,0 +1,46 @@
+ul, ul li {
+    padding: 0;
+    margin: 0;
+}
+
+#blok li {
+    list-style: none;
+}
+
+#blok, #blok ul {
+    width: 140px;
+}
+
+#blok ul {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    padding-left: 1px;
+    visibility: hidden;
+}
+
+#blok li {
+    padding-bottom: 1px;
+    position: relative;
+}
+
+#blok li:hover ul {
+    visibility: visible;
+    width: auto;
+    height: auto;
+}
+
+#blok a, #blok li:hover li a {
+    display: block;
+    font: 12px/30px verdana, sans-serif;
+    text-decoration: none;
+    padding: 0 10px;
+    width: 140px;
+    color: black;
+    background-color: aqua;
+}
+
+#blok li:hover a, #blok li:hover li:hover a {
+    background-color: darkgoldenrod;
+    color: white;
+}
