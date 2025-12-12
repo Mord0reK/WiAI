@@ -11,3 +11,4 @@ $con = mysqli_connect("wytrychy-db", "root", "rootpassword", "baza-restauracja")
 
 $zapytanie = mysqli_query($con, "INSERT INTO rezerwacje (nr_stolika, data_rez, liczba_osob, telefon) VALUES (5, '$data_rez', $osob, '$nr_tel')");
 
+mysqli_close($con)
