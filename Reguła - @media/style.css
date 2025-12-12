@@ -1,0 +1,40 @@
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightgray;
+    }
+    .profil
+    {
+        width: 900px;
+        display: flex;
+        float: left;
+    }
+
+    .lewy, .prawy
+    {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .lewy img
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    body {
+        background-color: white;
+    }
+
+    .prawy
+    {
+        text-align: center;
+    }
+
+    .lewy img
+    {
+        width: 100%;
+    }
+
+}
