@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmy</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+
+    <main>
+        <div class="lewy">
+            <br>
+            <h3>Dostępne gatunki filmu</h3>
+            <br>
+            <ol>
+                <li>Sci-Fi</li>
+                <li>Animacja</li>
+                <li>Dramat</li>
+                <li>Horror</li>
+                <li>Komedia</li>
+            </ol>
+            <br><br>
+            <p><a href="pliki/kadr.jpg">Pobierz obraz</a></p><br>
+            <p><a href="https://repertuar-kin.pl">Sprawdź repertuar kin</a></p>
+        </div>
+        <div class="prawy">
+            <div class="panel1">
+                <h1>FILMOTEKA</h1>
+            </div>
+            <div class="panel2">
+                <div class="xd">
+                    <form method="POST" action="dodaj.php">
+                        <label for="tytul">Tytuł filmu:</label>
+                        <input type="text" id="tytul" name="tytul"><br>
+                        <label for="gatunek">Gatunek filmu:</label>
+                        <input type="number" id="gatunek" name="gatunek"><br>
+                        <label for="rok-produkcji">Rok produkcji</label>
+                        <input type="number" id="rok-produkcji" name="rok-produkcji"><br>
+                        <label for="ocena">Ocean</label>
+                        <input type="number" id="ocena" name="ocena"><br>
+                        <button type="reset">CZYŚĆ</button>
+                        <button type="submit">DODAJ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="panel3">
+                <img src="pliki/kadr.jpg" alt="zdjęcie filmowe">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Autor strony: 2137694201</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    font-family: Helvetica, serif;
+}
+
+.lewy
+{
+    background-color: navy;
+    color: white;
+    width: 25%;
+    height: 700px;
+}
+
+.prawy
+{
+    width: 75%;
+}
+
+.panel1
+{
+    background-color: royalblue;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.panel2
+{
+    background-color: steelblue;
+    height: 300px;
+    width: 100%;
+}
+
+.panel3
+{
+    background-color: royalblue;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+footer
+{
+    clear: both;
+    background-color: steelblue;
+    text-align: center;
+    padding: 20px;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+h1
+{
+    text-spacing: 5px;
+}
+
+.xd
+{
+    padding: 30px;
+    line-height: 3;
+}
+
+form:hover
+{
+    background-color: deepskyblue;
+}
