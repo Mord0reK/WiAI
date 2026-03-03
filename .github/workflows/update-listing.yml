@@ -1,0 +1,20 @@
+name: Aktualizacja listingu
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger git pull
+        run: |
+          curl -X POST https://szkola.mordorek.dev/_webhook/git-pull \
+            -H "Content-Type: application/json" \
+            -H "CF-Access-Client-Id: ${{ secrets.CF_ACCESS_CLIENT_ID }}" \
+            -H "CF-Access-Client-Secret: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}" \
+            -H "${{ secrets.CUSTOM_HEADER_NAME }}: ${{ secrets.CUSTOM_BYPASS_SECRET }}" \
+            -d '{"token":"${{ secrets.WEBHOOK_TOKEN }}","path":"Wytrychy"}' \
+            --fail-with-body
