@@ -7,7 +7,7 @@
 
 <?php
 
-$serwer = "wytrychy-db";
+$serwer = "mysql-db";
 $baza = "Wytrychy_13_03";
 $uzytkownik = "root";
 $haslo = "rootpassword";
