@@ -1,0 +1,3 @@
+To jest tekst do skopiowania.
+Druga linia.
+Trzecia linia.

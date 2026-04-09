@@ -1,0 +1,4 @@
+To jest pierwsza linia.
+To jest druga linia.
+Ala ma kota.
+Programowanie jest fajne.
