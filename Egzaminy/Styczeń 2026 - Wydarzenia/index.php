@@ -3,7 +3,7 @@
     $host = "mysql-db";
     $user = "root";
     $pass = "rootpassword";
-    // $host = "-localhost";
+    // $host = "localhost";
     // $user = "root";
     // $pass = "";
     $conn = new mysqli($host, $user, $pass, $db);
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <header>
+    <header class="naglowek">
         <h1>Zgłoszenia wydarzeń</h1>
     </header>
     <main>
@@ -31,11 +31,13 @@
             </form>
             <table border="1">
                 <tr>
-                    <th colspan="3">ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Imię &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nazwisko</th>
+                    <th>Id</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
                 </tr>
 
 
-            <?php 
+            <?php
                 if (isset($_POST['status'])) {
                     $warunek = $_POST['status'];
                 }
@@ -49,7 +51,8 @@
 
                 echo "<h2>Wybrano opcję: $warunek </h2>";
 
-                while ($wiersz = mysqli_fetch_assoc($wynik)) {
+                while ($wiersz = mysqli_fetch_assoc($wynik))
+                {
                     echo "<tr>";
                     echo "<td>".$wiersz['id']."</td>";
                     echo "<td>".$wiersz['imie']."</td>";
@@ -61,11 +64,44 @@
         </section>
         <section class="prawa">
             <h2>Nowe zgłoszenie</h2>
+            <ul>
+                <?php
 
+                    $zapytanie = "SELECT personel.id, nazwisko FROM personel WHERE personel.id NOT IN (SELECT id_personel FROM rejestr)";
+                    $wynik = mysqli_query($conn, $zapytanie);
+
+                    while ($wiersz = mysqli_fetch_assoc($wynik))
+                    {
+                        echo "<li>".$wiersz['id']." ".$wiersz['nazwisko']."</li>";
+                    }
+                ?>
+            </ul>
+            <form method="post">
+                <label for="id_osoby">Wybierz id osoby z listy: </label>
+                <input type="number" name="id_osoby" id="id_osoby">
+                <input type="submit" value="Dodaj zgłoszenie">
+            </form>
+
+            <?php
+
+                if (isset($_POST['id_osoby']))
+                {
+                    $id_osoby = $_POST['id_osoby'];
+                    $zapytanie = "INSERT INTO rejestr (id_personel, id_pojazd, data) VALUES ($id_osoby, 14, CURRENT_DATE())";
+                    $wynik = mysqli_query($conn, $zapytanie);
+                }
+
+            ?>
         </section>
     </main>
-    <footer>
-
+    <footer class="stopka">
+        <p>Stronę wykonał: Ropucha</p>
     </footer>
+
+    <?php
+
+    $conn -> close();
+
+    ?>
 </body>
 </html>

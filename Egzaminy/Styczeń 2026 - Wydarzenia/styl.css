@@ -1,0 +1,76 @@
+*
+{
+    font-family: Tahoma;
+}
+
+body
+{
+    margin: 0;
+}
+
+.naglowek, .stopka
+{
+    background-color: Maroon;
+    color: white;
+    padding: 10px;
+}
+
+.lewa, .prawa
+{
+    width: 50%;
+    min-height: 800px;
+    padding-bottom: 30px;
+}
+
+.lewa
+{
+    background-color: LightSalmon;
+}
+
+.prawa
+{
+    background-color: DarkSalmon;
+}
+
+h1, h2, h3
+{
+    text-align: center;
+}
+
+table, td
+{
+    border: 1px solid Maroon;
+}
+
+table
+{
+    width: 85%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+ul
+{
+    list-style: none;
+}
+
+input[type=submit]
+{
+    background-color: Maroon;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+}
+
+input[type=submit]:hover
+{
+    background-color: white;
+    color: Maroon;
+}
+
+section
+{
+    float: left;
+}
